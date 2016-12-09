@@ -1,0 +1,86 @@
+<!DOCTYPE html  lang="es">
+<html>
+<link rel="stylesheet" href="style_css/main.css" type="text/css" media="all">
+<link rel="stylesheet" href="style_css/contacto.css" type="text/css" media="all">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width" />
+<title>Automoviles Picopato</title>
+</head>
+<body>
+<div id='cabecera'>
+    <div id='contenedorLogo'>
+        <a href="index.html">
+            <img id='logo' src="img/logo-picopato.png" alt="Logo Automoviles Picopato">
+        </a>
+    </div>
+    <div id='titulo'>
+       <span>
+        <a href="index.html">AUTOMOVÍLES PICOPATO</a>
+        </span>
+    </div>
+    <div id='identificacion'>
+        <span>
+        <a href="registro.html">
+        <img src="img/iconoPerfil.png" id='iconoPerfil'>Identificacion o registro.
+        </a>
+        </span>
+    </div>
+</div>
+    <div id="contenedor">
+        <div class='columna'>
+            <h1>Sobre Nosotros</h1>
+            <div class='descripcion' id='historia'>
+                <p>Automóviles Picopato es una empresa familiar fundada por Manuel Picopato en 1950, un hombre de entonces solo 20 años. En la empresa ahora también trabajan sus hijos Francisco y Sara como vendedores. Se trata una empresa de alquiler y venta de automóviles de lujo de marcas como Rolls Roys, Mercedes, Jaguar entre otras en la calle Gran Vía de Colón, Granada.</p>
+            </div>
+        </div>
+        <div class='columna'>
+            <h1>Donde estamos</h1>
+            <div class='descripcion' id='localizacion'>
+            Nos encontramos en la calle Gran Vía de Colón, sn, 18018 Granada
+            </div>
+            <div id="map"></div>
+        </div>
+        <div class='columna'>
+            <h1>Contacto</h1>
+            <form class="formulario">
+            <label for="nombre">Nombre y apellidos:</label>
+            <input type="text" name="nombre"><br>
+            <label for="email">E-mail de contacto:</label>
+            <input type="text" name="email"><br>
+            <label for="mensaje">Descripción:</label>
+            <textarea name="mensaje" id="mensaje" cols="30"></textarea><br>
+	  	    <input type="submit" id='enviar' value="Enviar"/>
+            </form>
+        </div>
+        <div class='columna'>
+           <div class='elementoContacto'>
+            <img src="img/phone.png" class='icono'>958 999 888 <br>666 555 444 </div>
+            <div class='elementoContacto'>
+            <img src="img/whatsapp.png" class='icono'>666 555 444 <br>693 582 471
+            </div>
+            <div class='elementoContacto'>
+            <img src="img/arroba.png" class='icono'>picopato@hotmail.com
+            </div>
+            <div class='elementoContacto'>
+            <img src="img/twitter.png" class='icono'>@autos_picopato
+            </div><div class='elementoContacto'>
+            <img src="img/facebook.png" class='icono'>Automóviles Picopato
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <img src="img/iconoBanderaING.png" class="iconoIdioma">
+        <img src="img/iconoBanderaES.png" class="iconoIdioma">
+    </footer>
+    <script>function myMap() {
+    var mapCanvas = document.getElementById("map");
+    var mapOptions = {
+        center: new google.maps.LatLng(37.1792136, -3.5995391),
+        zoom: 15
+    };
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+}</script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+</body>
+</html>

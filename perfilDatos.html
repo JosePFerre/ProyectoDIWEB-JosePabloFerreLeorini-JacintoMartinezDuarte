@@ -1,0 +1,66 @@
+<!DOCTYPE html  lang="es">
+<html>
+<link rel="stylesheet" href="style_css/main.css" type="text/css" media="all">
+<link rel="stylesheet" href="style_css/perfil.css" type="text/css" media="all">
+<script type="text/javascript" src="script/perfil.js"></script>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width" />
+<title>Automoviles Picopato</title>
+</head>
+<body>
+<div id='cabecera'>
+    <div id='contenedorLogo'>
+        <a href="index.html">
+            <img id='logo' src="img/logo-picopato.png" alt="Logo Automoviles Picopato">
+        </a>
+    </div>
+    <div id='titulo'>
+       <span>
+        <a href="index.html">AUTOMOVÍLES PICOPATO</a>
+        </span>
+    </div>
+    <div id='identificacion'>
+        <span>
+        <a href="registro.html">
+        <img src="img/iconoPerfil.png" id='iconoPerfil'>Identificacion o registro.
+        </a>
+        </span>
+    </div>
+</div>
+    <div id="contenedor">
+        <div id="contenido">
+   <div id="tab-container">
+      <ul>
+         <li class="seleccionado"><a href="perfilDatos.html">Datos de usuario</a></li>
+         <li><a href="perfilHistorial.html">Historial de compras</a></li>
+         <li><a href="perfilOfertas.html">Ofertas activas</a></li>
+      </ul>
+   </div>
+   <div id="main-container">
+     <div class='columna'>
+      <img src="img/fotoCliente.png" id='fotoUsuario'>
+    </div>
+    <div class='columna'>
+       <div class='datosUsuario'>
+        <img src="img/user.png" class='icono'>Nombre y apellidos : $nombreUsuario 
+        </div>
+        <div class='datosUsuario'>
+        <img src="img/phone.png" class='icono'>Teléfono de contacto: $telefonoUsuario; 
+        </div>
+        <div class='datosUsuario'>
+        <img src="img/arroba.png" class='icono'>Correo electrónico: $emailUsuario 
+        </div>
+        <div class='datosUsuario'>
+        <button>Cambiar datos personales</button> 
+        </div>
+    </div>
+    </div>
+   </div>
+    </div>
+    <footer id="footer">
+        <img src="img/iconoBanderaING.png" class="iconoIdioma">
+        <img src="img/iconoBanderaES.png" class="iconoIdioma">
+    </footer>
+</body>
+</html>

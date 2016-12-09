@@ -1,7 +1,8 @@
 <!DOCTYPE html  lang="es">
 <html>
 <link rel="stylesheet" href="style_css/main.css" type="text/css" media="all">
-<link rel="stylesheet" href="style_css/home.css" type="text/css" media="all">
+<link rel="stylesheet" href="style_css/perfil.css" type="text/css" media="all">
+<script type="text/javascript" src="script/perfil.js"></script>
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width" />
@@ -28,25 +29,26 @@
     </div>
 </div>
     <div id="contenedor">
-        <div id="menuPrincipal">
-            <a href="ventas.html">
-                <p>Catálogo de ventas</p>
-                <img src="img/sales.png" class="icono" >
-            </a>
-            <a href="alquiler.html">
-                <p>Catálogo de alquiler</p>
-                <img src="img/rent.png" class="icono" >
-            </a>
-            <a href="miPerfil.html">
-                <p>Mi perfil</p>
-                <img src="img/user.png" class="icono" >
-            </a>
-            <a href="contactoSobreNosotros.html">
-                <p>Sobre nosotros / Contacto</p>
-                <img src="img/contact.png" class="icono" id="especial">
-            </a>
+        <div id="contenido">
+   <div id="tab-container">
+      <ul>
+         <li><a href="perfilDatos.html">Datos de usuario</a></li>
+         <li><a href="perfilHistorial.html">Historial de compras</a></li>
+         <li class="seleccionado"><a href="perfilOfertas.html">Ofertas activas</a></li>
+      </ul>
+   </div>
+   <div id="main-container">
+      <img id="fotoUsuario" src="img/fotoCliente.png" alt="Foto del cliente">
+      <h1> Estas son tus ofertas disponibles, $nombreCliente.</h1>
+       <span id="ca" class="oferta">
+       <a>
+       <img id="imgOferta" src="img/imgOferta.png" alt="Oferta!"> ¡NUEVA OFERTA!</a><p>El sábado con el alquiler te regalamos el domingo entero!</p>
+       </span>
+       
         </div>
+   </div>
     </div>
+    
     <footer id="footer">
         <img src="img/iconoBanderaING.png" class="iconoIdioma">
         <img src="img/iconoBanderaES.png" class="iconoIdioma">

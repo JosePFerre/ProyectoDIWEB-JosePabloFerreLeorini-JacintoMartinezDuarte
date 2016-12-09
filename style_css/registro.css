@@ -1,0 +1,84 @@
+/*Proyecto Diseño Web
+Jose Pablo Ferre Leorini
+Jacinto Martinez Duarte
+Estilos para registro.html
+*/
+
+#contenedor{
+    display: table;
+}
+
+hr{
+    display: none;
+}
+
+.columna {
+	width: 50%;
+    height: calc(100% - 25px);
+	padding: 10px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.columna:first-child{
+    border-right:2px dashed grey;
+}
+
+.formulario{
+    text-align: center;
+}
+
+.formulario h1{
+    font-size: 2.5vw;
+}
+
+.formulario input {
+    font-family: "Bodoni MT", serif;
+	line-height:1.5;
+	font-size: 1.5vw;
+	color: black;
+	width: 50%;
+	background: rgba(255,255,255,0.5);
+    margin-top:3%;
+}
+
+.formulario .enviar{
+    max-width:15%;
+    font-size: 1.5vw;
+}
+
+.formulario p{
+    font-size: 1.1vw;
+}
+
+#iconoPerfil{
+    width:11%;
+}
+
+#pass2{
+    margin: 0;
+}
+
+.icono{
+    width:5%;
+}
+
+@media all and (max-width: 800px) {
+    .columna{
+        height:40%;
+        display: table-row;
+    }
+    
+    hr{
+        display: block;
+        border: 0;
+        border-bottom:2px dashed grey;
+    }
+    
+}
+
+@media all and (max-width: 505px) {
+    .formulario{
+        padding-top: 10%;
+    }
+}

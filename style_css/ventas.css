@@ -1,0 +1,190 @@
+/*Proyecto Diseño Web
+Jose Pablo Ferre Leorini
+Jacinto Martinez Duarte
+Estilos para alquiler.html y ventas.html
+*/
+
+#contenedor{
+    overflow-y: auto;
+    height: 90%;
+}
+
+#footer{
+    display: none;
+}
+
+#formularioVentas{
+    border-right:2px dashed grey;
+    width: 15%;
+    height: 100%;
+    display: inline-block;
+    float:left;
+    padding:2% 2% 2% 5%
+}
+
+#formularioVentas >*{
+    margin-top:8%
+}
+
+.etiqueta{
+    margin-top:100%;
+    font-size:120%
+}
+.fin{
+    margin-bottom: 8%
+}
+input, select{width: 100%}
+
+#contenedorTarjetas{
+    margin-left: 22%;
+    width: 77%;
+    height: auto;
+}
+
+.card {
+	margin:5% 0 0 5%;
+    float:left;
+    width: 25%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    
+}
+
+.card:last-child{
+    margin-bottom: 10%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius:5px;
+}
+
+.card >button> img{
+    border-radius:5px 5px 0 0;
+    margin:2%;
+}
+.container {
+    
+    padding: 2px 10px;
+}
+
+.container > button >p{
+    font-size:150%
+}
+.container h4{
+    text-align: center;
+    font-size:150%
+}
+
+.precio{
+    color:red;
+    background-image: url(../img/precio.png);
+    background-position:center;
+    background-size:100%;
+    background-repeat: no-repeat;
+}
+#seleccionado{
+    width: 80%;
+    float:left;
+}
+.oculto {
+    display: none;
+}
+#seleccionado > button >.container > p{
+    display:none;
+}
+
+#seleccionado> button >.container > .oculto{
+    display: inline-block;
+}
+.cajaTexto{
+    text-align:left ;
+    border: solid 2px;
+    width: 43%;
+    min-height: 17em;
+    height: auto;
+    margin:3%;
+    float:left;
+    
+}
+.cajaTexto > ul{
+    list-style: none;
+    font-size: 1.1em;
+    padding-left: 2%;
+    
+}
+#seleccionado > button >.container > .oculto > .cajaTexto{
+    display:block;
+}
+
+.icono{
+    height: 3em;
+    margin-left:40%;
+}
+	
+.redesSociales > ul{
+    list-style: none;
+}
+
+.redesSociales > ul> li{
+    float:left;
+	margin-left: 5%;
+}
+
+@media all and (max-width: 800px){
+	.card {
+    	width: 40%;    
+	}
+	
+	#formularioVentas{
+    	font-size: 80%;
+	}
+    
+	.cajaTexto{
+        width: 95%;
+        height: auto;
+        min-height:inherit;
+	}
+	
+    .icono{
+        height: 2em;
+    }
+}
+
+@media all and (max-width: 505px){
+	::-webkit-scrollbar { 
+        display: none; 
+    }
+	
+	#contenedorTarjetas{
+		display: inline-block;
+		clear: both;
+	}
+	
+	.cajaTexto{
+        width: 95%;
+        height: auto;
+	}
+	
+	.card {
+    	width: 90%;
+		margin-left: -5%;
+	}
+	
+	#formularioVentas{
+		display: inline-block;
+		width: 90%;
+		height: auto;
+		border-right:none;
+	    border-bottom:2px dashed grey;
+		padding-bottom: 5%;
+	}
+	
+	#formularioVentas >*{
+    	margin-top:0%
+	}
+	
+	 .icono{
+        height: 0.9em;
+    }
+}

@@ -1,0 +1,121 @@
+/*Proyecto Diseño Web
+Jose Pablo Ferre Leorini
+Jacinto Martinez Duarte
+Estilos para index.html
+*/
+
+
+#menuPrincipal{
+    border-radius: 1%;
+    border: solid 0.5em rgba(255,255,255,0.5);
+    display: inline-block;
+    height: 80%;
+    margin: 10%;
+    margin-top: 5%;
+    background-color: rgba(255,255,255,0.5);
+}
+#menuPrincipal > a{
+    width: 49.5%;
+    height: 20%;
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 1% 0% 13% 0%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+#menuPrincipal > a:visited{
+    color: rgb(60,60,60);
+    
+}
+#menuPrincipal > a:hover{
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    color:rgb(255,129,26);
+;
+}
+#menuPrincipal > a > p{
+    float: left;
+    font-size: 130%;
+    height: 50%;
+    width: 100%;
+    
+}
+.icono{
+    height: 100%;
+    display: inline;
+    vertical-align: top;
+}
+
+@media all and (min-width: 1800px) {
+	#menuPrincipal > a >p{
+        font-size:210%;
+    }
+}
+
+
+@media all and (max-width: 500px){
+    #menuPrincipal{
+    width: 80%;
+        display: inline-block;
+        margin: 10%;
+        height: auto;
+        padding-bottom: 5%;
+        
+    }
+    #menuPrincipal > a{
+    float: none;
+    font-size: 100%;
+    height: 10%;
+    width: 100%;
+    margin-bottom: 40%;
+    
+}  
+    #contenedor{
+
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    .icono{
+        height: 100%;
+        margin-bottom: 10%;
+        
+    }
+    #especial{
+        margin-top: 5%
+    }
+	
+	   ::-webkit-scrollbar { 
+        display: none; 
+    }
+}
+@media all and (min-width: 800px){
+
+#menuPrincipal{
+    height: 40%;
+}
+    
+#menuPrincipal > a{
+    width: 24.5%;
+    height: 30%;
+    margin: 1% 0% 0% 0%;
+}
+    
+
+#menuPrincipal > a > p{
+    font-size: 150%;
+    height: 50%;
+    width: 100%;
+    
+}
+.icono{
+    height: 140%;
+    display: inline-block;
+    vertical-align: bottom;
+    
+    }
+}
+
+    
+

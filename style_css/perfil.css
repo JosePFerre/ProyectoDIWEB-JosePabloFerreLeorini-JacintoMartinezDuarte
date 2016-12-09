@@ -1,0 +1,256 @@
+/*Proyecto Diseño Web
+Jose Pablo Ferre Leorini
+Jacinto Martinez Duarte
+Estilos para miPerfil.html, perfilDatos.html, perfilHistorial.html y perfilOfertas.html
+*/
+
+#contenido{
+width: 80%;
+   padding: 3.5% 10%;
+   overflow: hidden;
+}
+#tab-container{
+   float: left;
+   margin-top: 5%;
+   width: 15%;
+    margin-left:-6.7%
+}
+#tab-container ul{
+   list-style: none;
+   text-align: center;
+}
+#tab-container ul li{
+   border-top: 1px solid #666;
+   border-right: 1px solid #666;
+   border-bottom: 1px solid #666;
+   border-left: 8px solid #666;
+   background-color: #ddd;
+   margin: 17% 0;
+}
+#tab-container ul li a,
+#tab-container ul li a:visited{
+   text-decoration: none;
+   color: #666;
+   display: block;
+   padding: 15px 5px;
+}
+#tab-container ul li:hover{
+   border-left: 8px solid #333;
+}
+#tab-container ul li a:hover{
+   color: #000;
+}
+#tab-container ul li.seleccionado{
+   border-right: none;
+   background-color: #fff;
+   border-left: 8px solid #006699;
+}
+#main-container{
+   min-height: 21em;
+   margin-left: 8.2%;
+   padding: 2%;
+   background-color: #fff;
+   border: 1px solid #888;
+}
+
+#fotoUsuario{
+    float:left;
+    margin-right: 2%;
+}
+
+#tabla{
+    width: 95%;
+    margin:6% 2.5% 2.5% 2.5%;
+    border:solid 3px;
+    border-spacing: 0;
+}
+
+#tabla > tr, td{
+    border-collapse: collapse;
+    border:solid 1px; 
+}
+.par{
+    background-color: darkgray
+}
+#indicadores{
+    
+    font-weight: bold;
+    background-color: gray
+}
+.oferta{
+    text-align: center;
+    height: 2
+    background-color: aqua
+}
+
+#imgOferta{
+    height: 10%;
+    
+}
+#ca{
+    font-size: 200%
+}
+
+.columna {
+    float: left;
+	width: 70%;
+    height: 70%;
+	padding: 10px;
+}
+
+.columna:first-child{
+    width: 15%;
+}
+
+.columna #fotoUsuario{
+    margin-top: 10%;
+    width:125px;
+}
+
+.icono{
+    clear: both;
+    width:7%;
+    float:left;
+    margin-right: 5%;
+}
+
+.datosUsuario{
+    margin-bottom: 10%;
+}
+
+.datosUsuario button{
+    font-family: "Bodoni MT", serif;
+    width: 50%;
+    margin: auto;
+    padding: 1%;
+    display: block;
+}
+
+@media all and (max-width: 1000px) {
+    #fotoUsuario{
+        width:100px;
+    }
+	
+	.columna #fotoUsuario{
+        width:100px;
+    }
+	   #tab-container ul li{
+		font-size: 13px;
+		text-align: left;
+    }
+}
+
+@media all and (max-width: 800px) {
+	#contenedor{
+		height:auto;
+	}
+	
+	.columna #fotoUsuario{
+        width:75px;
+    }   
+	
+	#fotoUsuario{
+        width:75px;
+    }
+    
+    #main-container{
+		max-height:50%;
+        float:left;
+        background-color: #fff;
+        border: 1px solid #888;
+		overflow-y: scroll;
+    }
+    
+    #tab-container{
+        float: left;
+        width:100%;
+		margin-top: 0;
+        margin-bottom:-5%
+    }
+    #tab-container ul li{
+        border-top: 8px solid #666;
+       border-left: 1px solid #666;
+        display: inline-block;
+        margin: 0;
+		width: 15%;
+		min-height:10%;
+		font-size: 14px;
+    }
+    
+    #tab-container ul li:hover{
+       border-top: 8px solid #333;
+        border-left:1px solid #666;
+    }
+    #tab-container ul li.seleccionado{
+        border-left:none;
+        border-right: none;
+        border-bottom: none;
+        border-top: 8px solid #006699;
+        position: relative;
+        z-index: 25;
+    }
+	
+	 #main-container h1{
+		font-size:20px;
+    }
+	
+	#tabla{
+		font-size: 14px;
+		max-height: 60%;
+	}
+	
+	#ca{
+    	font-size: 150%
+	}
+}
+
+@media all and (max-width: 505px) {
+	#contenedor{
+		overflow-y: scroll;
+	}
+	
+	::-webkit-scrollbar { 
+        display: none; 
+    }
+	
+	#main-container h1{
+		font-size:16px;
+    }
+	
+	#tab-container{
+		margin-bottom:-10%
+	}
+	
+	#tab-container ul li{
+        width: 27%;
+        height:auto;
+        font-size: 10px;
+    }
+    
+    .columna #fotoUsuario{
+        width:50px;
+    }
+	
+	#fotoUsuario{
+        width:50px;
+    }
+    
+    .columna{
+        width:50%;
+        margin-right: 5%;
+    }
+    
+    .datosUsuario button{
+        width: 80%;
+        font-size: 11px;
+    }
+	
+	#tabla{
+		font-size: 10px;
+		height: 65%;
+	}
+	
+	#ca{
+    	font-size: 100%
+	}
+}
